@@ -5,6 +5,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.starwars.R
 import com.example.starwars.databinding.FragmentSplashBinding
 
 class SplashFragment : Fragment() {
