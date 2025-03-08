@@ -1,0 +1,24 @@
+package com.example.starwars.ui.home
+
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.starwars.repositories.ApiService
+import com.example.starwars.repositories.RetrofitClient
+import com.example.starwars.repositories.data.People
+import kotlinx.coroutines.launch
+
+class HomeViewModel : ViewModel() {
+
+    fun fetchPeople() {
+        viewModelScope.launch {
+            try {
+                val apiService = RetrofitClient.instance.create(ApiService::class.java)
+                val people: People = apiService.getPeople(1)
+                // Aqui você pode atualizar um LiveData ou manipular o usuário
+                println("User: ${people.name}")
+            } catch (e: Exception) {
+                println("Error: ${e.message}")
+            }
+        }
+    }
+}

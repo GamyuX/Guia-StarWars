@@ -1,4 +1,4 @@
-package com.example.starwars.ui
+package com.example.starwars.ui.planet
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

@@ -1,4 +1,4 @@
-package com.example.starwars.ui
+package com.example.starwars.ui.splash
 
 import android.os.Bundle
 import android.os.Handler
