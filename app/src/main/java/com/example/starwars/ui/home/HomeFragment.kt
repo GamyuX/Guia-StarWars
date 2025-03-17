@@ -1,25 +1,33 @@
 package com.example.starwars.ui.home
 
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.starwars.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
-    private var binding: FragmentHomeBinding? = null
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
 
-    override fun onViewCreated(view: android.view.View, savedInstanceState: Bundle?) {
-
-        val viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
-        super.onViewCreated(view, savedInstanceState)
-        binding = FragmentHomeBinding.bind(view)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        val viewModel = ViewModelProvider(this)[HomeViewModel::class.java]
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val root: View = binding.root
         viewModel.fetchPeople()
+        return root
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        binding = null
+        _binding = null
     }
 
 }
