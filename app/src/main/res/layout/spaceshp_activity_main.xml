@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.character.CharacterActivityMain">
+    tools:context=".ui.spaceship.SpaceshpActivityMain">
 
     <Button
         android:id="@+id/voltar"
@@ -24,13 +24,13 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/personagen"
+        android:id="@+id/Spaceship"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Personagens"
+        android:text="naves"
         android:textSize="40dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteX="212dp"
         tools:layout_editor_absoluteY="11dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,6 @@ class HomeViewModel : ViewModel() {
             try {
                 val apiService = RetrofitClient.instance.create(ApiService::class.java)
                 val people: People = apiService.getPeople(1)
-                // Aqui você pode atualizar um LiveData ou manipular o usuário
                 println("User: ${people.name}")
             } catch (e: Exception) {
                 println("Error: ${e.message}")

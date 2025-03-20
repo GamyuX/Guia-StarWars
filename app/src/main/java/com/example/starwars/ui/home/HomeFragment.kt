@@ -21,7 +21,6 @@ class HomeFragment : Fragment() {
         val viewModel = ViewModelProvider(this)[HomeViewModel::class.java]
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
-        viewModel.fetchPeople()
         return root
     }
 
