@@ -3,7 +3,6 @@ package com.example.starwars
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
 import com.example.starwars.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

@@ -1,6 +1,7 @@
 package com.example.starwars.repositories
 
 import com.example.starwars.repositories.data.People
+import com.example.starwars.repositories.data.PeopleList
 import com.example.starwars.repositories.data.Planets
 import com.example.starwars.repositories.data.SpaceShips
 import retrofit2.http.GET
@@ -12,6 +13,9 @@ interface ApiService {
 
     @GET("people/{id}")
     suspend fun getPeople(@Path("id") peopleId: Int): People
+
+    @GET("people")
+    suspend fun getListPeoples(@Path("") peopleId: Int): PeopleList
 
     @GET("planets/{id}")
     suspend fun getPlanets(@Path("id") planetsId: Int): Planets
