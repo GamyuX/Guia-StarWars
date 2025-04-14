@@ -1,4 +1,4 @@
-package com.example.starwars.ui.planet
+package com.example.starwars.ui.spaceship
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -7,7 +7,7 @@ import com.example.starwars.repositories.RetrofitClient
 import com.example.starwars.repositories.data.People
 import kotlinx.coroutines.launch
 
-class PlanetViewModel : ViewModel() {
+class PlanetsViewModel : ViewModel() {
 
     fun fetchPeople() {
         viewModelScope.launch {

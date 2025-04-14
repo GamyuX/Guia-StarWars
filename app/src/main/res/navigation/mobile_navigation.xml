@@ -18,7 +18,32 @@
         android:id="@+id/homeFragment"
         android:name="com.example.starwars.ui.home.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home"/>
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_characterFragment"
+            app:destination="@id/characterFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_planetsFragment"
+            app:destination="@id/planetsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_spaceshipFragment2"
+            app:destination="@id/spaceshipFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterFragment"
+        android:name="com.example.starwars.ui.character.CharacterFragment"
+        android:label="fragment_character"
+        tools:layout="@layout/fragment_character" />
+    <fragment
+        android:id="@+id/planetsFragment"
+        android:name="com.example.starwars.ui.spaceship.PlanetsFragment"
+        android:label="fragment_planet"
+        tools:layout="@layout/fragment_planet" />
+    <fragment
+        android:id="@+id/spaceshipFragment2"
+        android:name="com.example.starwars.ui.spaceship.SpaceshipFragment"
+        android:label="fragment_spaceship"
+        tools:layout="@layout/fragment_spaceship" />
 
 
 </navigation>

@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.starwars.databinding.FragmentSpaceshipBinding
-import com.example.starwars.ui.planet.PlanetViewModel
 
 class SpaceshipFragment : Fragment() {
 
@@ -19,7 +18,7 @@ class SpaceshipFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val viewModel = ViewModelProvider(this)[PlanetViewModel::class.java]
+        val viewModel = ViewModelProvider(this)[PlanetsViewModel::class.java]
         _binding = FragmentSpaceshipBinding.inflate(inflater, container, false)
         val root: View = binding.root
         return root

@@ -9,14 +9,14 @@
     tools:context=".ui.character.CharacterFragment">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Voltar"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="13dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="Voltar"
-        app:layout_constraintBottom_toTopOf="@+id/listView2"
+        app:layout_constraintBottom_toTopOf="@+id/listViewCharacter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
@@ -33,12 +33,12 @@
         android:textSize="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.609"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/Voltar"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <ListView
-        android:id="@+id/listView2"
+        android:id="@+id/listViewCharacter"
         android:layout_width="390dp"
         android:layout_height="639dp"
         android:layout_margin="20dp"
@@ -50,4 +50,3 @@
         app:layout_constraintTop_toBottomOf="@+id/textPersonagens"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

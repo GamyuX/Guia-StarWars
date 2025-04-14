@@ -2,29 +2,29 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/planet"
+    android:id="@+id/character"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".ui.planet.PlanetFragment">
+    tools:context=".ui.spaceship.PlanetsFragment">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Voltar"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginBottom="13dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="Voltar"
-        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintBottom_toTopOf="@+id/listViewPlanets"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textPlanetas"
-        android:layout_width="125dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="16dp"
@@ -32,13 +32,13 @@
         android:textColor="@color/white"
         android:textSize="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toEndOf="@+id/Voltar"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"/>
+        tools:ignore="MissingConstraints" />
 
     <ListView
-        android:id="@+id/listView"
+        android:id="@+id/listViewPlanets"
         android:layout_width="390dp"
         android:layout_height="639dp"
         android:layout_margin="20dp"
@@ -47,7 +47,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPlanetas" />
+        app:layout_constraintTop_toBottomOf="@+id/textPlanetas"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
