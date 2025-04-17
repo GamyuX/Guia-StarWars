@@ -18,9 +18,12 @@ class SpaceshipFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val viewModel = ViewModelProvider(this)[PlanetsViewModel::class.java]
+        val viewModel = ViewModelProvider(this)[SpaceshipViewModel::class.java]
         _binding = FragmentSpaceshipBinding.inflate(inflater, container, false)
         val root: View = binding.root
+        binding.buttonVoltar.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
         return root
     }
 

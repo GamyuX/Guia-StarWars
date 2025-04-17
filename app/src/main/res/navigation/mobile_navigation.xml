@@ -27,7 +27,7 @@
             app:destination="@id/planetsFragment" />
         <action
             android:id="@+id/action_homeFragment_to_spaceshipFragment2"
-            app:destination="@id/spaceshipFragment2" />
+            app:destination="@id/spaceshipFragment" />
     </fragment>
     <fragment
         android:id="@+id/characterFragment"
@@ -40,7 +40,7 @@
         android:label="fragment_planet"
         tools:layout="@layout/fragment_planet" />
     <fragment
-        android:id="@+id/spaceshipFragment2"
+        android:id="@+id/spaceshipFragment"
         android:name="com.example.starwars.ui.spaceship.SpaceshipFragment"
         android:label="fragment_spaceship"
         tools:layout="@layout/fragment_spaceship" />

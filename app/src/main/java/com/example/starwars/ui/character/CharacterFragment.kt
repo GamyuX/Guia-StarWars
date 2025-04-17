@@ -21,6 +21,9 @@ class CharacterFragment : Fragment() {
         val viewModel = ViewModelProvider(this)[CharacterViewModel::class.java]
         _binding = FragmentCharacterBinding.inflate(inflater, container, false)
         val root: View = binding.root
+        binding.buttonVoltar.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
         return root
     }
 

@@ -9,7 +9,7 @@
     tools:context=".ui.spaceship.PlanetsFragment">
 
     <Button
-        android:id="@+id/Voltar"
+        android:id="@+id/buttonVoltar"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -33,7 +33,7 @@
         android:textSize="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.479"
-        app:layout_constraintStart_toEndOf="@+id/Voltar"
+        app:layout_constraintStart_toEndOf="@+id/buttonVoltar"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
