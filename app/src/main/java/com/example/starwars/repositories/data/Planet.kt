@@ -1,6 +1,8 @@
 package com.example.starwars.repositories.data
 
-data class Planets(
+import com.google.gson.annotations.SerializedName
+
+data class Planet(
     val climate: String,
     val created: String,
     val diameter: String,
@@ -8,11 +10,14 @@ data class Planets(
     val films: List<String>,
     val gravity: String,
     val name: String,
-    val orbital_period: String,
+    @SerializedName("orbital_period")
+    val orbitalPeriod: String,
     val population: String,
     val residents: List<String>,
-    val rotation_period: String,
-    val surface_water: String,
+    @SerializedName("rotation_period")
+    val rotationPeriod: String,
+    @SerializedName("surface_water")
+    val surfaceWater: String,
     val terrain: String,
     val url: String
 )
