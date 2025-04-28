@@ -15,7 +15,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="13dp"
         android:backgroundTint="@android:color/holo_red_dark"
-        android:text="Voltar"
+        android:text="@string/back"
         app:layout_constraintBottom_toTopOf="@+id/listViewPlanets"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -28,16 +28,16 @@
         android:layout_height="50dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="16dp"
-        android:text="Planetas"
+        android:text="@string/planets"
         android:textColor="@color/white"
-        android:textSize="32dp"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toEndOf="@+id/buttonVoltar"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listViewPlanets"
         android:layout_width="390dp"
         android:layout_height="639dp"
