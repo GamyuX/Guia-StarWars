@@ -1,4 +1,4 @@
-package com.example.starwars.ui.spaceship
+package com.example.starwars.ui.planets
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -19,11 +19,19 @@ class PlanetsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val viewModel = ViewModelProvider(this)[PlanetsViewModel::class.java]
+
         _binding = FragmentPlanetBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        viewModel.planets.observe(viewLifecycleOwner) { planets ->
+            binding.listViewPlanets.adapter = ItemPlanetsAdapter(planets)
+        }
+
         binding.buttonVoltar.setOnClickListener {
             requireActivity().onBackPressed()
         }
+
+        viewModel.fetchPlanets()
         return root
     }
     override fun onDestroyView() {

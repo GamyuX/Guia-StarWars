@@ -36,7 +36,7 @@
         tools:layout="@layout/fragment_character" />
     <fragment
         android:id="@+id/planetsFragment"
-        android:name="com.example.starwars.ui.spaceship.PlanetsFragment"
+        android:name="com.example.starwars.ui.planets.PlanetsFragment"
         android:label="fragment_planet"
         tools:layout="@layout/fragment_planet" />
     <fragment
